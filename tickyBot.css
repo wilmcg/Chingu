@@ -1,13 +1,14 @@
 * {
 	font-family: Signika;
-	margin: 0;
+	margin: auto;
 	overflow-x: hidden;
+	align-items: center;
+	justify-content: center;
 }
 
 
 #home {
 	height: 80vh;
-  width: 100%;
 	background-color: rgb(85, 192, 236);
 	text-align: center;
 }
@@ -17,7 +18,6 @@
 	/* position: fixed; */
 	top: 0;
 	left: 0;
-	width: 100%;
 	height: 60px;
 	background-color: rgb(64, 89, 107);
 	margin: 0;
@@ -37,11 +37,33 @@
     color: #ffe53c;
 }
 
-.hero-flex{
-	display: flex;
-	align-items: center;
+.a-flex {
+	height: 50vh;
+}
+
+.f-flex {
+	height: 50vh;
+	background: rgb(144, 221, 170);
+}
+
+.cta-flex {
+	height: 50vh;
+}
+
+.ft-flex {
+	height: 10vh;
+	background: rgb(64, 89, 107);
 	justify-content: center;
 }
+
+.container-flex {
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+margin: auto;
+}
+
 
 .hero-text {
 margin-top: 30px;
@@ -66,6 +88,11 @@ padding: 90px;
 	padding-bottom: 30px;
 	color: white;
 }
+
+.page-title {
+	text-align: center;
+}
+
 
 .btn-1 {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
@@ -124,3 +151,4 @@ section {
   width: 100vw;
   left: 0;
 }
+
