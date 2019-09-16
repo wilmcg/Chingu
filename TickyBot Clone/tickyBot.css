@@ -11,7 +11,7 @@ body {
 }
 
 @media (min-width: 300px) {
-	.card-img {width: 200px;}
+	.card-img {width: 200px; height: 200px;}
 	
 	#slack-icon {
 		width: 30px;
@@ -37,12 +37,17 @@ p {
 }
 
 hr {
-	border: 1.5px solid blue;
+	border: 1.5px solid rgb(85, 192, 236);
 	width: 160px;
 	margin: auto;
 }
 
-
+code {
+	color: red;
+	background: #ddd;
+	font-family: monospace;
+	font-size: 16px;
+}
 
 
 #home {
@@ -78,15 +83,17 @@ hr {
 	height: 50vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	margin: 0;
 	padding: 0;
 	width: 60%;
 }
 
 .f-flex {
-	height: 50vh;
+	height: 60vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	margin: 0;
 	padding: 0;
 	width: 60%;
@@ -96,6 +103,7 @@ hr {
 	height: 50vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	margin: 0;
 	padding: 0;
 	width: 30%;
@@ -105,8 +113,13 @@ hr {
 	height: 10vh;
 	background: rgb(64, 89, 107);
 	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#ft-words {
+	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 
 .site-footer p {
@@ -165,18 +178,10 @@ padding: 90px;
 	color: white;
 }
 
-.extra {
-	
-}
-
 .page-title {
 	font-size: 40px;
 	align-items: flex-start;
 	text-align: center;
-}
-
-.page-half {
-	padding: 20px;
 }
 
 .halves {
@@ -188,8 +193,8 @@ padding: 90px;
 	height: 30%;
 }
 
-.page-full {
-	padding: 20px;
+.a-tag {
+	margin-bottom: 150px;
 }
 
 .btn-1 {
@@ -258,4 +263,43 @@ padding: 90px;
 .btn-2:active {
 	position:relative;
 	top:1px;
+}
+
+.back-to-top {
+	padding-right: 25px;
+	background: transparent;
+	border: 0;
+}
+
+.back-to-top img {
+width: 50px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.f-cards {
+	display: flex;
+	flex-direction: row;
+}
+
+.card{
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background: #f7f7f7;
+}
+
+.card p {
+	margin: 20px;
+	padding-bottom: 10px;
+}
+
+.card-img {
+	background: #40496b;
+	padding: 50px;
+	margin: 0;
+	width: 100%;
 }

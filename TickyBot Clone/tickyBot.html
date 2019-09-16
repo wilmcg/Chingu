@@ -12,7 +12,7 @@
 
 <body>
   <header class="site-header">
-    <nav class="main-nav" aria-label="Site links">
+    <nav id="top" class="main-nav" aria-label="Site links">
       <div class="container">
         <ul>
           <li>
@@ -138,7 +138,7 @@
             and the ticket will instantly update itself on our site.</p>
 		</div>
 	</div>
-        <div class="page-full">
+        <div class="page-full a-tag">
           <p>Support requests shouldn't be handled through Slack's direct messages.
             <br>
             <em>Image about someone asking silly questions and the workplace admin asking him/her to open a support ticket so
@@ -151,9 +151,10 @@
     <section class="page features" id="features">
       <div class="container-b container-flex">
 		  <div class="f-flex">
-        <h3 class="page-title">How It Works<hr></h3>
+		<h3 class="page-title">How It Works<hr></h3>
+		<div class="f-cards">
         <div class="card page__third">
-          <img class="card-img" src="5e294ff6045f826e1b4f452df8897fb8.svg" alt="">
+          <img class="card-img" src="https://tickybott.herokuapp.com/5e294ff6045f826e1b4f452df8897fb8.svg" alt="">
           <div class="card__description">
             <p>You can add
               <strong>Ticky</strong>Bot to your Slack workplace by scrolling down or
@@ -169,7 +170,7 @@
           </div>
         </div>
         <div class="card page__third">
-          <img class="card-img" src="61dc5059d07b210a9e0a7881695a8e03.svg" alt="">
+          <img class="card-img" src="https://tickybott.herokuapp.com/61dc5059d07b210a9e0a7881695a8e03.svg" alt="">
           <div class="card__description">
             <p>Once you or another admin solved their problems you can type
               <code>/ticket close #id</code> to close the ticket</p>
@@ -177,22 +178,27 @@
         </div>
 	  </div>
 	</div>
+	</div>
     </section>
     <section class="page cta" id="cta">
       <div class="container-a container-flex">
 		  <div class="cta-flex">
         <h3 class="page-title">Start Using
           <strong>Ticky</strong>Bot Today<hr></h3>
-        <div class="page-full">
+        <div class="cta-1">
           <p>
             <strong>Ticky</strong>Bot allows Slack teams to manage their support tickets 100% inside Slack, without having to switch
-            between different apps.</p>
+			between different apps.</p>
+		</div>
+		<div class="cta-2">
           <a class="btn-2" href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread">
             <img id="slack-icon" src="https://www.stickpng.com/assets/images/5cb480cd5f1b6d3fbadece79.png" alt="Slack Logo">
             <span>Add to
               <strong>Slack</strong>
             </span>
-          </a>
+		  </a>
+		</div>
+		<div class="cta-3">
           <p>... so you don't need to go back and forth with another app.</p>
 		</div>
 	</div>
@@ -201,18 +207,25 @@
   </main>
   <footer class="site-footer">
     <div class="container ft-flex">
+		<div class="empty"></div>
+		<div id="ft-words">
       <p>Cloned with
         <span class="emoji" role="img" aria-label="Love">❤️</span> by Wil McGinnis</p>
       <p>Source code is available on my
         <a href="https://github.com/wilmcg" target="_blank" rel="noopener noreferrer">GitHub page</a>
       </p>
-      <p>The app is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
-    </div>
+	  <p>The app is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
+	</div>
+	<div class="btt">
+	<a href="#top">
+	  <button class="back-to-top pointer">
+		<img src="btt.svg">
+		  </button>
+		</a>
+	</div>
+	</div>
   </footer>
-  <button class="back-to-top">
-    <img src="6c046c0244c5c5d05c3cf973afc6a1a8.svg" alt="">
-    <span class="screen-reader-text">Back to top</span>
-  </button>
+  
 <script type="text/javascript" src="main.js?133f0cc1f578c38979a8"></script></body>
 
 </html>
